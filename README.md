@@ -1,20 +1,7 @@
-# Affierul Alies — Professional Portfolio
+# Affierul Alies — professional portfolio
 
-Operations Leader | Enterprise Transformation | Digital Product Builder
+Career journey and selected work in operations and customer experience.
 
-## GitHub Pages
+Hosted with GitHub Pages from main /docs. Public contact: affierul@gmail.com.
 
-Publish from the main branch, /docs folder. No build command or environment variables are required.
-
-## Editing
-
-- docs/index.html: professional profile, experience and hiring contact
-- docs/content.js: six projects and public contact email
-- docs/style.css: responsive visual design
-- docs/app.js: project filters, case studies, scripted guide and email drafts
-
-All portfolio artwork is labeled as concept visuals, not product screenshots. Enterprise case notes awaiting review remain explicitly marked. Financial savings use only SGD XXXK. No internal records, vendor terms, staffing figures or proprietary implementation details are included.
-
-Hiring and resume enquiries: affierul@gmail.com. The contact form prepares a reviewable email draft; it does not send or store enquiries.
-
-Lucide icon attribution: LICENSE-icons.txt.
+Visuals are conceptual illustrations, not live systems or customer records. PPA uses Microsoft SharePoint and Power Automate product icons unchanged; icon source: https://learn.microsoft.com/en-us/power-platform/guidance/icons .
