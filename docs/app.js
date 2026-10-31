@@ -9,7 +9,7 @@ function rnd(seed){let s=seed;return()=>{s=(s*16807)%2147483647;return(s-1)/2147
 
 /* ---------- Matrix ---------- */
 const ICON={
- think:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 2Xh4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V17h6v-.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg>',
+ think:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V17h6v-.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2z"/></svg>',
  do:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg>',
  measure:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>',
  build:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>'};
@@ -33,12 +33,12 @@ const P=[
      measure:'Managed a SGD XXXK budget through unit-cost control, supplier SLA governance, billing assurance and capacity reviews. Used corrective actions to address performance gaps.',
      build:'Co-led route optimisation, and redesigned the courier payout into a performance-based incentive model tied to productivity, cost and delivery performance.'},
   r:['SGD XXXK/yr from RFQ (XX%)','SGD XXXK/yr from routes (XX%)','Pickup compliance above target']},
- {name:'Station leadership',role:'Ops Manager · Duty Manager',hook:'Station-wide scope',
-  l:{think:'Focused on end-to-end operational control: cross-functional handoffs, capacity constraints and service-continuity risks across the station.',
-     do:'Coordinated cross-functional service recovery, workforce deployment and escalation management, including direct resolution of customer issues.',
-     measure:'Used service performance, staffing and incident findings to review operational risk, agree corrective actions and support day-to-day station duty decisions.',
-     build:'Prepared the on-road operations scope for ISO 9001:2015 audits: process reviews, compliance documents and evidence. Partnered with Sales and CX to turn feedback into process fixes.'},
-  r:['1XXXX+ shipments/day','XXX+ person operation','ISO 9001:2015 audit-ready']},
+ {name:'Station leadership',role:'Ops Manager · Duty Manager',hook:'Performance & capacity ownership',
+  l:{think:'Owned the operating trade-offs behind monthly performance: service reliability, workforce productivity, capacity utilisation and cost-to-serve. Challenged route capacity against actual demand, rather than carrying the existing footprint forward.',
+     do:'Delivered a major capacity adjustment, consolidating XXX routes to XXX through demand-led sector planning and a rebalanced pickup, delivery and vendor mix. Led deployment briefings and service reviews to resolve customer-impact issues during the transition.',
+     measure:'Owned monthly operational performance reviews, connecting service outcomes, productivity, capacity utilisation and unit cost. Turned gaps into corrective actions with clear owners, and reviewed whether capacity changes translated into sustainable cost and service performance.',
+     build:'Redesigned route sectors and the courier incentive model to align capacity, productivity and service priorities. Embedded cross-functional feedback into operating reviews and prepared on-road processes, compliance documents and evidence for ISO 9001:2015 audits.'},
+  r:['Monthly performance ownership','XXX → XXX routes','Demand-led capacity planning','Cost-to-serve management','1XXXX+ shipments/day','ISO 9001:2015 audit-ready']},
  {name:'Recovery centre',role:'CX Manager · XX people',hook:'Team development',
   l:{think:'Reviewed the operating model against changing customer demand. Modernised roles and SOPs through incremental change, balancing service continuity with capability development.',
      do:'Led XX direct reports across Tier 2 case resolution and Tier 1 customer support, plus governance of a XX-person Tier 2 team. Rewrote SOPs around how customers contact us today.',
