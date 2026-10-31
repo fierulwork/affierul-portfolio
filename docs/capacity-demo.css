@@ -8,3 +8,34 @@
 @media(max-width:760px){.capacity-case{padding-top:40px}.capacity-case .sub{font-size:14px}.capacity-case .sec-head{margin-bottom:18px}.capacity-layout{grid-template-columns:1fr;padding:0 14px 14px;gap:15px}.demo-heading{padding:11px 14px;font-size:10px}.demo-heading strong{font-size:9px;padding:5px 7px}.capacity-steps{padding:12px 14px;gap:5px}.capacity-steps button{font-size:11px}.capacity-map-panel{padding:8px 10px}.capacity-map{height:155px;max-height:155px}.capacity-map-top{font-size:10px;margin-bottom:2px}#capacity-map-key{display:none}.capacity-decision h3{font-size:22px;margin-bottom:7px}.capacity-decision>p{font-size:12px;line-height:1.6;margin-bottom:12px}.capacity-metrics{padding-top:10px}.capacity-metrics strong{font-size:18px}#capacity-status{min-height:0;font-size:11px;margin:10px 0 12px}.capacity-mini-note{padding:0 14px 13px;font-size:9px}.proof .stat{padding:16px}.proof .stat .num{font-size:clamp(18px,4.5vw,22px);white-space:normal}.proof .stat>span{font-size:12px}.linkedin-link{margin:18px 0;display:block}.selected-intro nav{gap:18px}.confidentiality-footer{font-size:10px}.contact-fab{right:16px}}
 @media(max-width:360px){.proof{grid-template-columns:minmax(0,1fr)}.demo-heading{flex-wrap:wrap}.capacity-controls button{font-size:11px;padding-inline:10px}}
 @media(prefers-reduced-motion:reduce){.capacity-demo *{animation:none!important;transition:none!important}}
+/* Small, three-step story; same layout on all supported HTML versions. */
+#capacity{scroll-margin-top:90px}#impact{scroll-margin-top:90px}
+#capacity .sec-head{margin-bottom:20px}#capacity .sub{max-width:660px}
+#capacity .capacity-steps{padding:14px 16px;gap:7px}
+#capacity .capacity-layout{padding:0 16px 12px;gap:22px}
+#capacity .capacity-map-top{margin-bottom:0;font-size:10px}
+#capacity .capacity-map{height:205px;max-height:205px}
+#capacity .capacity-decision h3{font-size:24px;line-height:1.2;margin:0 0 9px}
+#capacity .capacity-decision>p{font-size:13px;line-height:1.65;margin:0 0 12px}
+#capacity .capacity-metrics{padding-top:10px;gap:12px}
+#capacity .capacity-metrics strong{font-size:17px;line-height:1.3;white-space:normal}
+#capacity #capacity-status{font-size:11px;min-height:17px;margin:9px 0}
+#capacity .capacity-mini-note{text-align:right;font-size:9px;padding:0 16px 12px;margin:0}
+#capacity .capacity-detail{margin-top:7px;font-size:11px}
+#capacity .capacity-detail summary{font-size:11px}
+@media(max-width:760px){
+ #capacity .sec-head{margin-bottom:16px}#capacity h2{font-size:30px;line-height:1.12;margin-bottom:12px}
+ #capacity .sub{font-size:13px;line-height:1.65}
+ #capacity .capacity-steps{padding:12px;gap:5px}
+ #capacity .capacity-layout{padding:0 12px 12px;gap:13px}
+ #capacity .capacity-map-panel{padding:6px 10px}
+ #capacity .capacity-map{height:126px;max-height:126px}
+ #capacity .capacity-map-top{font-size:9px}
+ #capacity .capacity-decision h3{font-size:21px;margin-bottom:7px}
+ #capacity .capacity-decision>p{font-size:12px;line-height:1.55;margin-bottom:10px}
+ #capacity .capacity-metrics{padding-top:9px}
+ #capacity .capacity-metrics strong{font-size:16px}
+ #capacity #capacity-status{font-size:10px;margin:8px 0;min-height:15px}
+ #capacity .capacity-controls button{font-size:11px;padding:10px 14px}
+ #capacity .capacity-mini-note{padding:0 12px 10px}
+}

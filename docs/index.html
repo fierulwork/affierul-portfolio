@@ -23,7 +23,7 @@ body{margin:0}
 img{max-width:100%}
 [hidden]{display:none!important}
 </style>
-<link rel="stylesheet" href="capacity-demo.css?v=2">
+<link rel="stylesheet" href="capacity-mobile-v3.css">
 </head>
 <body>
 <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
@@ -252,12 +252,11 @@ img{max-width:100%}
     </div>
   </section>
 
-<section class="capacity-case" id="capacity" aria-labelledby="capacity-title">
- <div class="sec-head"><span class="kicker">Case study · Capacity planning</span><h2 id="capacity-title">A local view for daily decisions.</h2><p class="sub">Station-level reporting was too broad for my focus areas. I built a planner to connect local demand, coverage and capacity.</p></div>
+<section class="capacity-case" id="capacity" data-capacity-version="3" aria-labelledby="capacity-title">
+ <div class="sec-head"><span class="kicker">Case study · Capacity planning</span><h2 id="capacity-title">See where help is needed.</h2><p class="sub">Station reports were too broad for my daily decisions. I built a planner to focus on the areas that needed attention.</p></div>
  <div class="capacity-demo compact-capacity" id="capacity-demo">
-  <div class="demo-heading"><span>Planning walkthrough</span><strong>Synthetic data · fictional map</strong></div>
-  <nav class="capacity-steps" aria-label="Capacity planning walkthrough"><button type="button" data-cap-step="0" aria-current="step">01 Problem</button><button type="button" data-cap-step="1">02 Focus area</button><button type="button" data-cap-step="2">03 Scenario</button></nav>
-  <div class="capacity-layout"><div class="capacity-map-panel"><div class="capacity-map-top"><span id="capacity-scope">Station overview</span><span id="capacity-map-key">One total. Different workloads.</span></div><svg class="capacity-map" viewBox="0 0 560 340" role="img" aria-labelledby="capacity-map-title capacity-map-desc"><title id="capacity-map-title">Fictional capacity planning map</title><desc id="capacity-map-desc">Schematic areas A, B and C connected to a station. Advance the three-step walkthrough to inspect local demand and a reallocation scenario. This is not a real road network.</desc>
+  <nav class="capacity-steps" aria-label="Capacity planning walkthrough"><button type="button" data-cap-step="0" aria-current="step">01 Problem</button><button type="button" data-cap-step="1">02 Focus</button><button type="button" data-cap-step="2">03 Plan</button></nav>
+  <div class="capacity-layout"><div class="capacity-map-panel"><div class="capacity-map-top"><span id="capacity-scope">Station view</span></div><svg class="capacity-map" viewBox="0 0 560 340" role="img" aria-labelledby="capacity-map-title capacity-map-desc"><title id="capacity-map-title">Fictional capacity planning map</title><desc id="capacity-map-desc">Illustrative areas A, B and C around one station. The steps reveal a local workload gap, then a possible reallocation.</desc>
      <defs><pattern id="map-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#dce5e0" stroke-width="1"/></pattern></defs><rect width="560" height="340" fill="url(#map-grid)" rx="12"/>
      <path class="map-river" d="M0 260Q140 180 240 250T560 220"/>
      <path class="map-street" d="M40 90H520M70 160H480M80 290H480M120 40V300M280 35V300M450 30V290"/>
@@ -266,14 +265,14 @@ img{max-width:100%}
      <g class="map-zone" data-map-area="C"><path d="M175 232 332 217 445 246 435 310 169 310 128 275Z"/><text x="290" y="266">AREA C</text><text class="zone-status" id="map-status-c" x="290" y="289">Within capacity</text></g>
      <path class="capacity-transfer" d="M355 170Q280 215 206 171" fill="none"/><g class="map-station"><rect x="247" y="158" width="64" height="47" rx="8"/><path d="m259 177 20-11 20 11v15h-40zM274 192v-10h10v10"/><text x="279" y="222">STATION</text></g>
     </svg></div>
-   <div class="capacity-decision"><h3 id="capacity-step-title">The total looks fine.</h3><p id="capacity-step-copy">Demand fits the station’s total capacity. Local gaps are hidden inside the aggregate.</p>
-    <div class="capacity-metrics"><div><span id="capacity-metric-one-label">Station demand / capacity</span><strong id="station-capacity">290 / 300 units</strong></div><div><span id="area-metric-label">Visibility</span><strong id="area-capacity">Station level</strong></div></div>
-    <p id="capacity-status" role="status" aria-live="polite">Look closer before deciding.</p>
-    <div class="capacity-controls"><button type="button" id="capacity-prev" disabled>← Back</button><span id="capacity-step-count">1 / 3</span><button type="button" id="capacity-next">Focus area →</button></div>
+   <div class="capacity-decision"><h3 id="capacity-step-title">The station looks covered.</h3><p id="capacity-step-copy">The overall report looks fine. It does not show which area needs extra help.</p>
+    <div class="capacity-metrics"><div><span id="capacity-metric-one-label">Station view</span><strong id="station-capacity">Capacity fits</strong></div><div><span id="area-metric-label">Local gaps</span><strong id="area-capacity">Not visible</strong></div></div>
+    <p id="capacity-status" role="status" aria-live="polite">Look at the focus area.</p>
+    <div class="capacity-controls"><button type="button" id="capacity-prev" disabled>← Back</button><span id="capacity-step-count" aria-live="polite">1 / 3</span><button type="button" id="capacity-next">Next →</button></div>
    </div></div>
-  <p class="capacity-mini-note">Invented values illustrate the planning logic. Real deployment requires service and route feasibility checks.</p>
+  <p class="capacity-mini-note">For illustration only.</p>
  </div>
- <details class="capacity-detail"><summary>How I used the actual planner</summary><p>Selected focus areas and day/date subsets, then compared route coverage, workload and operating assumptions. Scenario and feasibility views helped me assess deployment options before making a daily decision.</p><p>This public reconstruction simplifies the logic. It does not show company data or claim that a simulated result produced the separate route-consolidation achievement.</p></details>
+ <details class="capacity-detail"><summary>About the actual planner</summary><p>I used mapping, day/date filters and operating assumptions to compare focus-area workloads and test deployment options. The illustration shows the decision logic using fictional areas.</p></details>
 </section>
 
   <section id="bring">
@@ -393,7 +392,7 @@ img{max-width:100%}
 <script src="privacy.js?v=simple5" defer></script>
 <script src="app.js?v=scope8" defer></script>
 <script src="experience.js?v=explode5" defer></script>
-<script src="capacity-demo.js?v=2" defer></script>
+<script src="capacity-mobile-v3.js" defer></script>
 <button class="confidentiality-footer" type="button" data-request-resume aria-label="Selected figures withheld for confidentiality. Request full résumé."><span aria-hidden="true">●</span> Selected figures withheld · Full résumé ↗</button>
 </body>
 </html>
