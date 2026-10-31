@@ -16,41 +16,47 @@ const ICON={
 const LABEL={think:'Think',do:'Do',measure:'Measure',build:'Build'};
 const P=[
  {name:'Case recovery redesign',role:'CX Manager · ORBIIT · 2022–23',hook:'Shared case visibility',
-  l:{think:'Diagnosed fragmented case ownership, inconsistent standardised work and non-value-added administration. Resolution within the target window sat at XX%, while senior Tier 2 capacity was absorbed by routine updates instead of complex service recovery.',
-     do:'Used a phased rollout to support change adoption. Prioritised quick wins in routine updates, then reallocated senior Tier 2 capacity to value-added recovery work: clearance, damage, missing shipments and delivery failures.',
+  l:{think:'Diagnosed fragmented case ownership, inconsistent standardised work and non-value-added administration. Senior Tier 2 capacity was absorbed by routine updates instead of complex service recovery.',
+     do:'Led change adoption through a phased rollout and practical quick wins, helping experienced agents move from private logs to a shared way of working. Reallocated senior Tier 2 capacity from routine updates to value-added service recovery.',
      measure:'Tracked benefit realisation through case closure, quality and turnaround measures. Team-to-case reporting supported performance coaching, root-cause analysis and targeted corrective action.',
      build:'Built ORBIIT with SharePoint List, Power Automate and Power BI: a single source of truth for the case queue, standardised communication templates, workflow automation and performance dashboards.'},
-  r:['XX% → XX% monthly target-window closure','+XX% YoY case closure','+XX% YoY quality audit score','Turnaround Xh → under Xh','X vFTE · SGD XXXK/yr','AMEA + SEA Prestige Awards']},
+  r:['Improved case closure','Stronger quality outcomes','Capacity released for recovery','AMEA + SEA recognition']},
  {name:'Service-failure backlog',role:'CX Manager · Singapore market',hook:'Service recovery',
-  l:{think:'Framed the service failure in terms of customer impact and cost of poor quality: XXXX–XXXX delayed packages a day, with XX% eligible for money-back guarantees. The priority was containment followed by a structural network fix.',
+  l:{think:'Framed the service failure in terms of customer impact and cost of poor quality: recurring shipment delays, customer disruption and money-back-guarantee exposure. The priority was containment followed by a structural network fix.',
      do:'Led service-recovery prioritisation and escalation governance. Managed customer recovery decisions within delegated authority and escalated exceptions to senior leadership.',
      measure:'Quantified the service and commercial exposure to build an evidence-based business case for network intervention.',
      build:'Aligned stakeholders around the business case, leading to flight-network changes that addressed the recurring cause of the delays.'},
-  r:['Backlog −XX% in X months','Flight-network changes approved','Daily MBG authority']},
+  r:['Backlog reduced','Network intervention approved','Customer recovery authority']},
  {name:'Vendor & cost',role:'Ops Manager · Singapore',hook:'Commercial impact',
   l:{think:'Connected commercial evaluation with route design and cost-to-serve, treating supplier renewal and network optimisation as related operating decisions.',
-     do:'Co-led the RFQ and commercial negotiations across X–X vendors. Managed supplier transitions and service-continuity risks when replacing underperforming partners.',
-     measure:'Managed a SGD XXXK budget through unit-cost control, supplier SLA governance, billing assurance and capacity reviews. Used corrective actions to address performance gaps.',
+     do:'Co-led the RFQ and commercial negotiations across courier vendors. Managed supplier transitions and service-continuity risks when replacing underperforming partners.',
+     measure:'Owned courier budget performance through unit-cost control, supplier SLA governance, billing assurance and capacity reviews. Used corrective actions to address performance gaps.',
      build:'Co-led route optimisation, and redesigned the courier payout into a performance-based incentive model tied to productivity, cost and delivery performance.'},
-  r:['SGD XXXK/yr from RFQ (XX%)','SGD XXXK/yr from routes (XX%)','Pickup compliance above target']},
+  r:['Recurring annual savings','Supplier accountability','Service continuity through transition']},
  {name:'Station leadership',role:'Ops Manager · Duty Manager',hook:'Performance & capacity ownership',
   l:{think:'Owned the operating trade-offs behind monthly performance: service reliability, workforce productivity, capacity utilisation and cost-to-serve. Challenged route capacity against actual demand, rather than carrying the existing footprint forward.',
-     do:'Delivered a major capacity adjustment, consolidating XXX routes to XXX through demand-led sector planning and a rebalanced pickup, delivery and vendor mix. Led deployment briefings and service reviews to resolve customer-impact issues during the transition.',
+     do:'Delivered a major capacity adjustment, consolidating the route footprint through demand-led sector planning and a rebalanced pickup, delivery and vendor mix. Led deployment briefings and service reviews to resolve customer-impact issues during the transition.',
      measure:'Owned monthly operational performance reviews, connecting service outcomes, productivity, capacity utilisation and unit cost. Turned gaps into corrective actions with clear owners, and reviewed whether capacity changes translated into sustainable cost and service performance.',
      build:'Redesigned route sectors and the courier incentive model to align capacity, productivity and service priorities. Embedded cross-functional feedback into operating reviews and prepared on-road processes, compliance documents and evidence for ISO 9001:2015 audits.'},
-  r:['Monthly performance ownership','XXX → XXX routes','Demand-led capacity planning','Cost-to-serve management','1XXXX+ shipments/day','ISO 9001:2015 audit-ready']},
- {name:'Recovery centre',role:'CX Manager · XX people',hook:'Team development',
+  r:['Monthly performance ownership','Route consolidation','Demand-led capacity planning','Cost-to-serve management','Station-wide duty responsibility']},
+ {name:'Focus-area capacity planning',role:'Ops Manager · Decision support',hook:'Local decisions, better evidence',
+  l:{think:'Station-wide reporting was too broad for daily decisions in selected focus areas. With no ready-to-use tool available, I needed a way to connect geographic coverage, local demand and operating constraints before changing deployment.',
+     do:'Defined the planning questions and built a focused scenario planner. Selected areas and day/date subsets, reviewed workload distribution, and compared coverage and capacity options before deciding what needed attention.',
+     measure:'Used before-and-after scenarios and feasibility checks to review workload, cutoff exposure and return-time implications. The planner supports operational judgement; it is not presented as proof that a simulated outcome was realised.',
+     build:'Developed geographic mapping and scenario views combining shipment/location inputs, route coverage, sequencing and operating assumptions. Built decision support around the granularity the daily operation needed.'},
+  r:['Focus-area visibility','Day / date filtering','Capacity scenarios','Feasibility checks']},
+ {name:'Recovery centre',role:'CX Manager · Singapore market',hook:'Team development',
   l:{think:'Reviewed the operating model against changing customer demand. Modernised roles and SOPs through incremental change, balancing service continuity with capability development.',
-     do:'Led XX direct reports across Tier 2 case resolution and Tier 1 customer support, plus governance of a XX-person Tier 2 team. Rewrote SOPs around how customers contact us today.',
-     measure:'Held an X-hour contact SLA on secondary escalations with each Tier 2 specialist handling XX–XX cases a day, and tracked closure against target.',
+     do:'Led Tier 2 case resolution and Tier 1 customer support, with accountability for recovery-centre performance and people development. Rewrote SOPs around how customers contact us today.',
+     measure:'Reviewed secondary-escalation responsiveness, individual case workloads and closure against target. Used quality reviews and coaching to strengthen capability and accountability.',
      build:'Integrated practical tools with workforce capacity planning, building on the WFM function I had established as a Specialist to align staffing with demand.'},
-  r:['XX-person centre','Team members progressed into management','X-hour secondary SLA']},
+  r:['Cross-functional recovery leadership','Team members progressed into management','Coaching and performance governance']},
  {name:'Escalation intake',role:'CX Manager · PPA',hook:'1 first contact',
   l:{think:'Identified defects at intake, unclear ownership and avoidable rework in cross-functional handoffs. The requirement was one structured intake with clear escalation routing, without duplicating each team’s backend system.',
-     do:'Scoped it to first contact only. Backend work stays in each team’s own system. Tier 2 got a Teams alert to call the customer back within X hours.',
+     do:'Scoped it to first contact only. Backend work stays in each team’s own system. Tier 2 received a Teams alert with a defined customer callback requirement.',
      measure:'Created an intake audit trail with timestamps and accountable owners. The coordination team could review follow-up history and Tier 2 callback compliance against the required service window.',
      build:'Built quality-at-source controls into SharePoint intake: required fields by request type, Power Automate routing to the accountable team, and Teams alerts for Tier 2.'},
-  r:['Email follow-ups → 1 intake','X-hour Tier 2 callback tracked','Complete info at first contact']}
+  r:['One structured intake','Callback accountability','Complete info at first contact']}
 ];
 const bar=document.getElementById('projbar'),lensBox=document.getElementById('lenses');
 P.forEach((p,i)=>{const b=document.createElement('button');b.className='proj';b.type='button';b.setAttribute('aria-pressed',i===0);b.dataset.i=i;
@@ -98,7 +104,7 @@ const PAIN_STORIES={
   ['TIER 1 / SUPPORT REQUEST','An email is not a complete intake.','<div class="mini-email"><small>Subject: Please help customer</small><p>Customer called again.<br>Can someone check?</p><div class="missing">Tracking number? Request details?</div></div><p class="pain-note">Sent back for clarification.</p>'],
   ['HANDOFF / WRONG INBOX','Who should own this?','<div class="inbox-route"><span>Tier 1</span><i>→</i><span>Wrong team</span><i>↩</i><span>Forward again</span></div><p class="pain-note">The customer waits through handoffs.</p>'],
   ['FOLLOW-UP / INBOX THREADS','Any update? Again.','<div class="duplicate-mail"><span>Any update?</span><span>Following up…</span><span>Customer called again.</span></div><p class="pain-note">No shared request and chase history.</p>'],
-  ['TIER 2 / CALLBACK','Has the customer been called?','<div class="callback-clock">X hours<small>Callback requirement</small></div><div class="missing handoff-gap">Owner notified? Callback made?</div><p class="pain-note">The coordination team needs visibility.</p>']
+  ['TIER 2 / CALLBACK','Has the customer been called?','<div class="callback-clock">Defined SLA<small>Callback requirement</small></div><div class="missing handoff-gap">Owner notified? Callback made?</div><p class="pain-note">The coordination team needs visibility.</p>']
  ]}
 };
 function Story(root,cfg){
@@ -159,10 +165,10 @@ function Story(root,cfg){
     steps:[
       {h:'Before: every Tier 2 specialist had a private sheet',p:'Cases sat in personal spreadsheets, and scan updates were checked by hand. When someone went on leave (Agent D), their cases went quiet and aged. Seniors spent their day on routine updates.',tools:[]},
       {h:'One shared queue',p:'Established a single source of truth for case ownership, age, status and next action. Shared visibility supports standardised work, absence coverage and prioritisation of overdue cases.',tools:['SharePoint']},
-      {h:'Updates send themselves',p:'Power Automate checks scans and sends the right email template for each case type: delay update, customs document request, damage claim form, proof of delivery. Over XXXX emails a day.',tools:['Power Automate']},
+      {h:'Updates send themselves',p:'Power Automate checks scans and sends the right email template for each case type: delay update, customs document request, damage claim form, proof of delivery. Routine updates no longer depend on each agent composing an email.',tools:['Power Automate']},
       {h:'Seniors on the cases that matter',p:'Routine updates run on automation and routine support. Senior Tier 2 specialists now spend their time on high-impact service recovery: customs clearance, damage, missing, transit delay and wrongly delivered.',tools:['SharePoint','Power Automate']},
       {h:'Performance you can drill into',p:'Power BI reports go from team to agent to single case. Team leads use them for coaching and case reviews, and a predictive view flags drops in resolution or clearance before they escalate.',tools:['Power BI']},
-      {h:'Result',p:'Monthly target-window closure from XX% to XX% within X–X months, and +XX% case closure and +XX% quality audit score year on year. Case turnaround from end of day or X hours to under X hours. X vFTE released, about SGD XXXK a year. Used by XX+ people across Singapore, Malaysia and ANZ.',tools:['SharePoint','Power Automate','Power BI']}
+      {h:'Result',p:'Improved case closure, turnaround and quality outcomes. Automation released capacity for complex service recovery, with shared ownership and a clearer performance-review cadence. Detailed measures are available in a private discussion.',tools:['SharePoint','Power Automate','Power BI']}
     ],
     place(i){cs.forEach((el,c)=>{const p=STEPS[i][c];window.gsap?gsap.set(el,{x:p.x,y:p.y,width:p.w,opacity:i>=4?0:1}):(el.style.transform=`translate(${p.x}px,${p.y}px)`,el.style.width=p.w+'px',el.style.opacity=i>=4?0:1);});},
     build(tl){
@@ -199,9 +205,9 @@ function Story(root,cfg){
       {h:'Before: follow-ups went by email',b:1,p:'When a customer chased, the Tier 1 agent emailed the team they thought owned it: Delivery Operations, Operations Admin, Tier 2, Billing or a Team Lead. The request arrived, and the coordination team lost sight of it.',tools:[]},
       {h:'Bounced for missing info, invisible otherwise',b:1,p:'Follow-ups without the tracking number, address or invoice number came back to the agent. The rest sat in inboxes with no record of which team had been contacted or when, so requests were repeatedly followed up.',tools:[]},
       {h:'One first point of contact',p:'Introduced a standardised intake with quality-at-source controls. Required fields vary by request type, reducing clarification loops and avoidable rework before the receiving team acts.',tools:['SharePoint']},
-      {h:'Routed to the owning team',p:'Power Automate notifies the team that owns each follow-up type. For Tier 2, it sends a Teams alert to call the customer back within X hours.',tools:['SharePoint','Power Automate','Teams']},
+      {h:'Routed to the owning team',p:'Power Automate notifies the team that owns each follow-up type. For Tier 2, it sends a Teams alert to call the customer back within the defined service window.',tools:['SharePoint','Power Automate','Teams']},
       {h:'Follow-ups you can see',p:'The coordination team sees every follow-up with time and owner, and whether Tier 2 called back within the required callback window. PPA covers the first contact only; each team carries on in its own backend system, so nobody has to update twice.',tools:['SharePoint','Teams']},
-      {h:'Result',p:'One first point of contact for every Tier 1 agent. Complete follow-ups, sent to the right team, with an X-hour Tier 2 callback that is tracked and no extra admin for teams with their own systems.',tools:['SharePoint','Power Automate','Teams']}
+      {h:'Result',p:'One first point of contact for every Tier 1 agent. Complete follow-ups, sent to the right team, with a tracked Tier 2 callback requirement and no extra admin for teams with their own systems.',tools:['SharePoint','Power Automate','Teams']}
     ],
     place(i){const S=[P0,P0,P2,P3,P4,P4][i];tks.forEach((el,k)=>{el.style.transform=`translate(${S[k].x}px,${S[k].y}px)`;el.style.opacity=i===5?0:1;});},
     build(tl){
@@ -232,7 +238,7 @@ if(hasGSAP&&!reduce){
   gsap.from('.hero-in > *',{opacity:0,y:24,filter:'blur(8px)',duration:1.1,stagger:.08,ease:'expo.out',clearProps:'filter,transform,opacity'});
   const below=[...document.querySelectorAll('.reveal')].filter(el=>el.getBoundingClientRect().top>innerHeight);
   below.forEach(el=>el.classList.add('pre'));
-  ScrollTrigger.batch(below,{start:'top XX%',once:true,onEnter:els=>gsap.to(els,{opacity:1,y:0,duration:.8,stagger:.06,ease:'expo.out',onComplete:()=>els.forEach(e=>{e.classList.remove('pre');e.style.cssText='';})})});
+  ScrollTrigger.batch(below,{start:'top 90%',once:true,onEnter:els=>gsap.to(els,{opacity:1,y:0,duration:.8,stagger:.06,ease:'expo.out',onComplete:()=>els.forEach(e=>{e.classList.remove('pre');e.style.cssText='';})})});
 }
 
 /* ---------- Nav ---------- */
