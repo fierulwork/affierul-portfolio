@@ -23,7 +23,7 @@ body{margin:0}
 img{max-width:100%}
 [hidden]{display:none!important}
 </style>
-<link rel="stylesheet" href="capacity-demo.css?v=1">
+<link rel="stylesheet" href="capacity-demo.css?v=2">
 </head>
 <body>
 <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
@@ -44,10 +44,10 @@ img{max-width:100%}
 <section id="summary" class="executive"><div class="sec-head"><span class="kicker">Executive summary</span><h2>Leadership, <em>in practice.</em></h2><p class="summary-lead">I lead people and operations through change—connecting customer experience, workforce capacity and cost discipline.</p></div><p class="summary-detail">I’m Affierul Alies. Over 13 years at FedEx Express across Malaysia and Singapore, I progressed from resolving customer cases to leading a recovery centre and last-mile operations. My strength is connecting customer recovery with the realities of physical operations: developing people, aligning capacity with demand, and owning the commercial trade-offs. When available systems leave a decision gap, I build practical tools to close it.</p><div class="leadership-three"><article><b>01 / People</b><h3>Develop teams.</h3><p>Capability development, performance coaching and clear accountability, with team members progressing into management.</p></article><article><b>02 / Process</b><h3>Improve performance.</h3><p>Standardised work, service recovery, capacity planning and cross-functional governance.</p></article><article><b>03 / Technology</b><h3>Build what helps.</h3><p>Workflow automation, decision support and hands-on digital product development.</p></article></div><p class="career-strip">Case resolution <span>→</span> Team leadership <span>→</span> Workforce & process improvement <span>→</span> CX management <span>→</span> Operations management</p></section>
 
 
-  <div class="proof" aria-label="Key results">
+  <div class="proof" id="impact" aria-label="Key results">
     <div class="card stat"><b class="num">Commercial discipline</b><span>Recurring annual savings through vendor negotiations and route optimisation.</span></div>
-    <div class="card stat"><b class="num">Operational ownership</b><span>Monthly performance, capacity deployment and station-wide duty responsibility.</span></div>
-    <div class="card stat"><b class="num">People development</b><span>Coaching, change adoption and team members progressing into management.</span></div>
+    <div class="card stat"><b class="num">5X employees</b><span>Operations scope led through frontline leaders, alongside outsourced courier partners.</span></div>
+    <div class="card stat"><b class="num">3X direct reports</b><span>CX leadership across Tier 1 support and Tier 2 case recovery, with team members progressing into management.</span></div>
     <div class="card stat"><b class="num">Service recovery</b><span>Improved case handling and reduced backlog through structured escalation and network intervention.</span></div>
   </div>
 
@@ -253,17 +253,11 @@ img{max-width:100%}
   </section>
 
 <section class="capacity-case" id="capacity" aria-labelledby="capacity-title">
- <div class="sec-head"><span class="kicker">Case study · Focus-area capacity planner</span><h2 id="capacity-title">The station view was not enough.</h2><p class="sub">I needed to make daily capacity decisions for selected areas. Existing reporting operated at station level, and no ready-to-use tool gave me the local view I needed. So I built decision support around the problem.</p></div>
- <div class="capacity-context"><p><b>The leadership decision</b>Define the focus area, challenge the workload assumptions, and test deployment options before committing resources.</p><p><b>The tool’s role</b>Connect mapping, demand and operating constraints. Support judgement with scenarios and feasibility checks.</p></div>
- <div class="capacity-demo" id="capacity-demo">
-  <div class="demo-heading"><span>Interactive reconstruction</span><strong>Synthetic data · fictional areas</strong></div>
-  <nav class="capacity-steps" aria-label="Capacity planning walkthrough">
-   <button type="button" data-cap-step="0" aria-current="step"><span>01</span>Station view</button><button type="button" data-cap-step="1"><span>02</span>Focus area</button><button type="button" data-cap-step="2"><span>03</span>Test capacity</button><button type="button" data-cap-step="3"><span>04</span>Compare</button>
-  </nav>
-  <div class="capacity-layout">
-   <div class="capacity-map-panel">
-    <div class="capacity-map-top"><span id="capacity-scope">Station overview</span><label for="capacity-day">Scenario day<select id="capacity-day"><option value="peak">Uneven demand</option><option value="steady">Steadier demand</option></select></label></div>
-    <svg class="capacity-map" viewBox="0 0 560 340" role="img" aria-labelledby="capacity-map-title capacity-map-desc"><title id="capacity-map-title">Fictional capacity planning map</title><desc id="capacity-map-desc">Schematic areas A, B and C connected to a station. Use the focus area buttons below to inspect demand and capacity. This is not a real road network.</desc>
+ <div class="sec-head"><span class="kicker">Case study · Capacity planning</span><h2 id="capacity-title">A local view for daily decisions.</h2><p class="sub">Station-level reporting was too broad for my focus areas. I built a planner to connect local demand, coverage and capacity.</p></div>
+ <div class="capacity-demo compact-capacity" id="capacity-demo">
+  <div class="demo-heading"><span>Planning walkthrough</span><strong>Synthetic data · fictional map</strong></div>
+  <nav class="capacity-steps" aria-label="Capacity planning walkthrough"><button type="button" data-cap-step="0" aria-current="step">01 Problem</button><button type="button" data-cap-step="1">02 Focus area</button><button type="button" data-cap-step="2">03 Scenario</button></nav>
+  <div class="capacity-layout"><div class="capacity-map-panel"><div class="capacity-map-top"><span id="capacity-scope">Station overview</span><span id="capacity-map-key">One total. Different workloads.</span></div><svg class="capacity-map" viewBox="0 0 560 340" role="img" aria-labelledby="capacity-map-title capacity-map-desc"><title id="capacity-map-title">Fictional capacity planning map</title><desc id="capacity-map-desc">Schematic areas A, B and C connected to a station. Advance the three-step walkthrough to inspect local demand and a reallocation scenario. This is not a real road network.</desc>
      <defs><pattern id="map-grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#dce5e0" stroke-width="1"/></pattern></defs><rect width="560" height="340" fill="url(#map-grid)" rx="12"/>
      <path class="map-river" d="M0 260Q140 180 240 250T560 220"/>
      <path class="map-street" d="M40 90H520M70 160H480M80 290H480M120 40V300M280 35V300M450 30V290"/>
@@ -271,21 +265,15 @@ img{max-width:100%}
      <g class="map-zone" data-map-area="B"><path d="M306 38 514 38 514 181 335 190 299 133Z"/><text x="405" y="91">AREA B</text><text class="zone-status" id="map-status-b" x="405" y="116">Available capacity</text><circle cx="366" cy="142" r="5"/><circle cx="442" cy="148" r="5"/></g>
      <g class="map-zone" data-map-area="C"><path d="M175 232 332 217 445 246 435 310 169 310 128 275Z"/><text x="290" y="266">AREA C</text><text class="zone-status" id="map-status-c" x="290" y="289">Within capacity</text></g>
      <path class="capacity-transfer" d="M355 170Q280 215 206 171" fill="none"/><g class="map-station"><rect x="247" y="158" width="64" height="47" rx="8"/><path d="m259 177 20-11 20 11v15h-40zM274 192v-10h10v10"/><text x="279" y="222">STATION</text></g>
-    </svg>
-    <div class="area-controls" role="group" aria-label="Inspect focus area"><button type="button" data-area="A" aria-pressed="true">Area A</button><button type="button" data-area="B" aria-pressed="false">Area B</button><button type="button" data-area="C" aria-pressed="false">Area C</button></div>
-    <p class="map-caption">Schematic map. All locations, workload units and capacity values in this demonstration are invented.</p>
-   </div>
-   <div class="capacity-decision">
-    <span class="kicker" id="capacity-step-label">01 / Diagnose</span><h3 id="capacity-step-title">An aggregate can hide a local constraint.</h3><p id="capacity-step-copy">The station total fits within available capacity. That does not mean every area has enough coverage. Inspect the local distribution before deciding.</p>
-    <div class="capacity-metrics"><div><span>Station demand / capacity</span><strong id="station-capacity">290 / 300 units</strong></div><div><span id="area-metric-label">Area A demand / capacity</span><strong id="area-capacity">140 / 100 units</strong></div></div>
-    <div class="capacity-load"><div id="capacity-load-fill"></div></div><p id="capacity-status" role="status" aria-live="polite"></p>
-    <div id="capacity-adjustment" hidden><label for="capacity-shift">Reallocate capacity from B to A <output id="capacity-shift-value" for="capacity-shift">0 units</output></label><input id="capacity-shift" type="range" min="0" max="60" step="10" value="0"><div class="capacity-actions"><button type="button" id="capacity-balance">Try a balanced allocation</button><button type="button" id="capacity-reset">Reset</button></div><p class="capacity-assumption">Toy model: capacity is transferable between adjacent areas. Total capacity stays fixed. Real deployment also requires route, time-window, skill and service feasibility checks.</p></div>
-    <div id="capacity-comparison" hidden><table><caption>Before / scenario · workload pressure</caption><thead><tr><th scope="col">Area</th><th scope="col">Before</th><th scope="col">Scenario</th></tr></thead><tbody id="capacity-comparison-body"></tbody></table><p id="capacity-verdict"></p></div>
-    <div class="capacity-controls"><button type="button" id="capacity-prev" disabled>← Back</button><span id="capacity-step-count">1 / 4</span><button type="button" id="capacity-next">Next →</button></div>
-   </div>
-  </div>
+    </svg></div>
+   <div class="capacity-decision"><h3 id="capacity-step-title">The total looks fine.</h3><p id="capacity-step-copy">Demand fits the station’s total capacity. Local gaps are hidden inside the aggregate.</p>
+    <div class="capacity-metrics"><div><span id="capacity-metric-one-label">Station demand / capacity</span><strong id="station-capacity">290 / 300 units</strong></div><div><span id="area-metric-label">Visibility</span><strong id="area-capacity">Station level</strong></div></div>
+    <p id="capacity-status" role="status" aria-live="polite">Look closer before deciding.</p>
+    <div class="capacity-controls"><button type="button" id="capacity-prev" disabled>← Back</button><span id="capacity-step-count">1 / 3</span><button type="button" id="capacity-next">Focus area →</button></div>
+   </div></div>
+  <p class="capacity-mini-note">Invented values illustrate the planning logic. Real deployment requires service and route feasibility checks.</p>
  </div>
- <p class="capacity-footnote"><b>What this demonstrates:</b> moving from station-level reporting to targeted, evidence-based deployment decisions. This simplified public reconstruction illustrates the planning logic; it is not the original operational tool, a road-routing optimiser, or a claim of realised savings.</p>
+ <details class="capacity-detail"><summary>How I used the actual planner</summary><p>Selected focus areas and day/date subsets, then compared route coverage, workload and operating assumptions. Scenario and feasibility views helped me assess deployment options before making a daily decision.</p><p>This public reconstruction simplifies the logic. It does not show company data or claim that a simulated result produced the separate route-consolidation achievement.</p></details>
 </section>
 
   <section id="bring">
@@ -295,7 +283,7 @@ img{max-width:100%}
       <p class="sub">Built in express logistics, but none of it is specific to parcels. Each one is backed by scope I have actually carried.</p>
     </div>
     <div class="skills">
-      <div class="card skill reveal"><span class="sk">Operations leadership</span><strong>Own performance. Align capacity with demand.</strong><p>Led frontline leaders, employees and outsourced courier capacity. Owned monthly performance reviews and aligned route capacity, workforce deployment and cost-to-serve. As Duty Manager, coordinated service recovery and escalations across the station.</p></div>
+      <div class="card skill reveal"><span class="sk">Operations leadership</span><strong>Own performance. Align capacity with demand.</strong><p>Led 5X employees through frontline leaders, alongside outsourced courier partners. Owned monthly performance reviews and aligned route capacity, workforce deployment and cost-to-serve. As Duty Manager, coordinated service recovery and escalations across the station.</p></div>
       <div class="card skill reveal"><span class="sk">Cost &amp; vendors</span><strong>Own the budget and the vendors behind it</strong><p>Owned courier budget performance through cost-per-piece management, supplier SLA governance and billing assurance. Co-led vendor negotiations and route optimisation that delivered recurring annual savings.</p></div>
       <div class="card skill reveal"><span class="sk">Customer experience</span><strong>Recover service when it matters most</strong><p>Led a cross-market recovery centre with approval authority on money-back guarantee claims. Handled founder and executive escalations, and reduced a service-failure backlog through structured recovery and escalation.</p></div>
       <div class="card skill reveal"><span class="sk">People</span><strong>Modernise a team without breaking it</strong><p>Reworked a longstanding structure and SOPs step by step. Developed team members who progressed into management. Coaching and quality assurance across frontline and Tier 2 teams.</p></div>
@@ -314,7 +302,7 @@ img{max-width:100%}
       <div class="role now reveal"><div class="rl"><i></i></div><div>
         <div class="role-h"><strong>Operations Manager</strong><span class="num">Feb 2024 &ndash; Aug 2026</span></div>
         <div class="where">Singapore</div>
-        <ul><li>Led last-mile operations through frontline leaders, employees and outsourced courier partners, balancing service commitments, workforce deployment and productivity.</li>
+        <ul><li>Led 5X employees through frontline leaders, alongside outsourced courier partners, balancing service commitments, workforce deployment and productivity.</li>
         <li>Owned monthly operational performance reviews, connecting service outcomes, productivity, capacity utilisation and cost-to-serve with accountable corrective actions.</li>
         <li>Delivered a major route-capacity redesign, consolidating the route footprint through demand-led sector planning and a rebalanced pickup, delivery and vendor mix.</li>
         <li>As Duty Manager, coordinated station-wide service recovery, capacity deployment and cross-functional escalations across the station.</li>
@@ -324,7 +312,7 @@ img{max-width:100%}
       <div class="role reveal"><div class="rl"><i></i></div><div>
         <div class="role-h"><strong>Customer Experience Manager</strong><span class="num">Aug 2021 &ndash; Jan 2024</span></div>
         <div class="where">Malaysia, serving the Singapore market</div>
-        <ul><li>Led a cross-market recovery centre spanning Tier 2 case resolution and Tier 1 customer support, with accountability for service outcomes and people development.</li>
+        <ul><li>Led 3X direct reports across Tier 2 case resolution and Tier 1 customer support, with accountability for recovery-centre outcomes and people development.</li>
         <li>Approval authority on money-back guarantee claims. Handled founder and executive escalations.</li>
         <li>Reduced a service-failure backlog through structured recovery and escalation. Improved case closure, quality and turnaround through ORBIIT and shared performance visibility.</li>
         <li>Modernised team structures and SOPs through phased change. Supported team members progressing into management, and introduced ORBIIT, PPA and practical workforce tools.</li></ul>
@@ -403,8 +391,9 @@ img{max-width:100%}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="privacy.js?v=simple5" defer></script>
-<script src="app.js?v=executive7" defer></script>
+<script src="app.js?v=scope8" defer></script>
 <script src="experience.js?v=explode5" defer></script>
-<script src="capacity-demo.js?v=1" defer></script>
+<script src="capacity-demo.js?v=2" defer></script>
+<button class="confidentiality-footer" type="button" data-request-resume aria-label="Selected figures withheld for confidentiality. Request full résumé."><span aria-hidden="true">●</span> Selected figures withheld · Full résumé ↗</button>
 </body>
 </html>
